@@ -70,3 +70,4 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 ### Usage
 
 Open your terminal, run cd Downloads (or whichever directory you downloaded the script into, i.e Desktop), and run sudo ./HostsMod.sh
+To revert the changes made, run sudo ./Revert-HostsMod.sh instead.
