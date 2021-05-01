@@ -7,6 +7,6 @@ fi
 # Fail entire script if one command fails'
 set -e
 # Replace edited hosts file with the backup
-mv /etc/hosts.cache /etc/hosts
+mv /etc/hosts.bak /etc/hosts
 # Tell user it is successful
 echo Successfully reverted changes.
