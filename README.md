@@ -67,4 +67,4 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 
 ### Usage
 
-Run as administrator
+Open your terminal, run cd Downloads (or whichever directory you downloaded the script into, i.e Desktop), and run sudo ./HostsMod.sh
