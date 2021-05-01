@@ -8,7 +8,7 @@ I've also decided to include common IP logger links.
 I forked this with the intention of providing a script that will work on
  Linux and macOS. If you run Windows, go to the original repository at https://github.com/GardeningTool/HostsMod
 
- If you would like to update to the latest domains (which likely will be very rare), run the reversion script first. 
+ If you would like to update to the latest domains (which likely will be very rare), run the reversion script first, and then run the original HostsMod.sh script again. It's unlikely that you will have to download a new version of the script, as the current one will always pull domains off of github. 
 
 ### Domains
 
