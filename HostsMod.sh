@@ -11,4 +11,7 @@ fi &&
  #Recreate hosts file with added domains on the end, redirects all domains to localhost
  cat /etc/hosts.cache /etc/domains > /etc/hosts &&
  #Cleanup unnecessary domains file, leaves hosts.cache in case you want to revert the changes.
- rm /etc/domains
+ rm /etc/domains &&
+ #Tell user the edit was successful. If any command fails, it's not possible for the script to make it to this line. 
+ echo Successfully added domains to hosts file. 
+
