@@ -1,10 +1,12 @@
  #/bin/bash
- #Check for root permission
- if [ "$EUID" -ne 0 ]
-  then echo "Please type "sudo ./Revert-HostsMod.sh" instead."
-  exit
-fi && 
- #Replace edited hosts file with original cache
- sudo mv /etc/hosts.cache /etc/hosts &&
- #wait time to create illusion of progress + tell user it is successful
- sleep 3 && echo Successfully reverted changes.
+# Check for root permission
+if [ "$EUID" -ne 0 ]; then
+  echo "Please prepend $(tput setaf 3)\"sudo\"$(tput sgr0) to this command."
+  exit 1
+fi
+# Fail entire script if one command fails'
+set -e
+# Replace edited hosts file with the backup
+mv /etc/hosts.bak /etc/hosts
+# Tell user it is successful
+echo Successfully reverted changes.
