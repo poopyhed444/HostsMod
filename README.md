@@ -21,14 +21,14 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 
 Simply run
 ```bash
-sudo bash <(curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod.sh)
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod.sh | sudo bash
 ```
 
 ### Remove
 
 Just run
 ```bash
-sudo bash <(curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh)
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
 ```
 
 ## Domains
