@@ -9,6 +9,7 @@ set -e
 # Back up the old hosts file
 cp /etc/hosts /etc/hosts.bak
 # Append the remote domains file to the /etc/hosts file
-curl -sL https://raw.githubusercontent.com/hackingmc/HostsMod/main/domains >> /etc/hosts
+curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
+# Notify user the script has successfully added domains
 echo "Successfully added domains to hosts file."
 
