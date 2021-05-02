@@ -7,7 +7,7 @@ fi
 # Fail entire script if one command fails'
 set -e
 # Back up the old hosts file
-mv /etc/hosts /etc/hosts.bak
+cp /etc/hosts /etc/hosts.bak
 # Append the remote domains file to the /etc/hosts file
 curl -sL https://raw.githubusercontent.com/hackingmc/HostsMod/main/domains >> /etc/hosts
 echo "Successfully added domains to hosts file."
