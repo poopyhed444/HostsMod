@@ -30,6 +30,12 @@ Just run
 ```bash
 curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
 ```
+###BETA HostsMod - Both installation and removal, POSSIBLE glitches.
+run
+```bash
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod-BETA.sh | sudo bash
+```
+
 
 ## To-Do
 ```Merge installation and reversion script, make CLI or GUI interface to control which one is used
