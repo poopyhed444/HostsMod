@@ -10,6 +10,7 @@ set -e
 echo "Select an Option by typing the corresponding number and pressing enter"
 echo "1) Install HostsMod"
 echo "2) Revert the changes that HostsMod made"
+# Check what input the user provides
 read INPUT_NUMBER
 case $INPUT_NUMBER in
 
@@ -35,4 +36,5 @@ mv /etc/hosts.bak /etc/hosts
 echo Successfully reverted changes.
 ;;
 
+#End script
 esac
