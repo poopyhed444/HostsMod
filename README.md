@@ -34,8 +34,8 @@ curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-Hosts
 ## To-Do
 ```Merge installation and reversion script, make CLI or GUI interface to control which one is used
 Option to also add Ad-Blocking capabilities 
-Check if backup file already exists, if so, installation will prompt the user if they are sure they want to continue'''
-
+Check if backup file already exists, if so, installation will prompt the user if they are sure they want to continue
+```
 ## Domains
 ```
 mvncentral.net
