@@ -4,7 +4,7 @@
 
 In the Minecraft cheating community, it's not uncommon for clients or client cracks/leaks to be malware. The most famous example of this would be the Autumn client "crack", released by Kant. This application attempts to blacklist known hosts of Kant's malware, in order to prevent someone from accidentally getting themselves ratted.
 
-I've also decided to include common IP logger links.
+Newb also decided to include common IP logger links.
 
 I forked this with the intention of providing a script that will work on
  Linux and macOS. If you run Windows, go to the original repository at https://github.com/GardeningTool/HostsMod
@@ -30,6 +30,11 @@ Just run
 ```bash
 curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
 ```
+
+## To-Do
+```Merge installation and reversion script, make CLI or GUI interface to control which one is used
+Option to also add Ad-Blocking capabilities 
+Check if backup file already exists, if so, installation will prompt the user if they are sure they want to continue
 
 ## Domains
 ```
