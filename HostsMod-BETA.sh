@@ -14,7 +14,7 @@ read INPUT_NUMBER
 
 case $INPUT_NUMBER in
 
-  # Change Hosts file, will happen if user types 1
+# Change Hosts file, will happen if user types 1
   1)
     # Clears all text on command line
     clear
@@ -24,8 +24,8 @@ case $INPUT_NUMBER in
     curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
     # Notify user the script has successfully added domains
     echo "Successfully added domains to hosts file."
- ;;
-  
+  ;;
+
   # Revert changes, will start if option 2 was selected by user.
   2)
     # Clears all text on command line
@@ -34,6 +34,6 @@ case $INPUT_NUMBER in
     mv /etc/hosts.bak /etc/hosts
     # Tell user it is successful
     echo Successfully reverted changes.
- ;;
-  
+  ;;
+
 esac
