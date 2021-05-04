@@ -15,7 +15,7 @@ read INPUT_NUMBER
 case $INPUT_NUMBER in
 
 # Change Hosts file, will happen if user types 1
-  1)
+    1)
     # Clears all text on command line
     clear
     # Back up the old hosts file
@@ -27,7 +27,7 @@ case $INPUT_NUMBER in
   ;;
 
   # Revert changes, will start if option 2 was selected by user.
-  2)
+    2)
     # Clears all text on command line
     clear
     # Replace edited hosts file with the backup
