@@ -7,11 +7,11 @@ fi
 # Fail entire script if one command fails
 set -e
 # Give user options
-echo "Select an Option by typing the corresponding number and pressing enter
-1) Install HostsMod
-2) Uninstall HostsMod"
-read INPUT_NUMBER
+echo "Select an Option by typing the corresponding number and pressing enter"
+echo "1) Install HostsMod"
+echo "2) Uninstall HostsMod"
 
+read INPUT_NUMBER
 case $INPUT_NUMBER in
 
 # Change Hosts file, will happen if user types 1
@@ -37,3 +37,4 @@ case $INPUT_NUMBER in
   ;;
 
 esac
+
