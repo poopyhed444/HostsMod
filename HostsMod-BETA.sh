@@ -11,7 +11,6 @@ echo "Select an Option by typing the corresponding number and pressing enter
 1) Install HostsMod
 2) Uninstall HostsMod"
 read INPUT_NUMBER
-
 case $INPUT_NUMBER in
 
   # Change Hosts file, will happen if user types 1
