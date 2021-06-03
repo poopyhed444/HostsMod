@@ -30,7 +30,7 @@ Just run
 ```bash
 curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
 ```
-### BETA HostsMod - Both installation and removal, POSSIBLE glitches.
+### BETA HostsMod - LIKELY BROKEN FOR NOW, USE OPTIONS ABOVE INSTEAD. 
 run
 ```bash
 curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod-BETA.sh | sudo bash
