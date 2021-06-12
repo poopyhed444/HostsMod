@@ -21,6 +21,8 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 
 ## Usage
 
+CURRENT VERSION: 3.0.0
+
 ### Install
 
 Simply run
