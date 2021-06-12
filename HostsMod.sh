@@ -10,6 +10,7 @@ set -e
 cp /etc/hosts /etc/hosts.bak
 # Append the remote domains file to the /etc/hosts file
 curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
-# Notify user the script has successfully added domains
-echo "Successfully added domains to hosts file."
-
+# Find amount of domains in remote file, create variable to tell user later
+lines=$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)
+# Notify user the script has successfully added domains, using lines variable
+echo "Successfully added $lines domains to hosts file."
