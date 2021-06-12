@@ -39,13 +39,15 @@ Check if backup file already exists, if so, installation will prompt the user if
 ```
 ## Domains
 ```
-mvncentral.net
+mvncentral.net (Domain used for java dropper dependency)
 vladvilcu2006.tech
 verble.software (Main domain for his rat)
 jonathanhardwick.me
-etc.catering
+etc.catering (not known to be malicious, although is confirmed to be owned by kant)
 tlrepo.cc (Another Kant URL used by the Tenacity crack)
 batonrogue.tech
+khonsarifamily.tech (Domain used in kant's java mapping. Known to be used on already ratted systems, may be used elsewhere)
+verbleisover.party
 grabify.link
 bmwforum.co
 leancoding.co
