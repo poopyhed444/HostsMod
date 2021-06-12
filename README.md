@@ -1,8 +1,12 @@
 # HostsMod
 
+## DISCLAIMER: 
+The source is completely public, and both the "release" and version in the repository are exactly the same. There is no obfuscation or protection of any kind, and you are free to edit this code however you like. The command included in the instructions will download it from this repository. If you are not very intelligent and assume that I can do something malicious in 16 lines (including commented description), then you can download the "domains" file and manually add it to the end of the /etc/hosts file, using a text editor like vim or nano (with sudo permissions).  
+
 ## Description
 
 In the Minecraft cheating community, it's not uncommon for clients or client cracks/leaks to be malware. The most famous example of this would be the Autumn client "crack", released by Kant. This application attempts to blacklist known hosts of Kant's malware, in order to prevent someone from accidentally getting themselves ratted.
+
 
 Newb also decided to include common IP logger links.
 
