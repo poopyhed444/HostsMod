@@ -7,8 +7,8 @@ fi
 # Fail entire script if one command fails'
 set -e
 # Find difference between old and new hosts file, to determine how many lines were added
-backuplines=$(wc -l /etc/hosts.bak)
-currentlines=$(wc -l /etc/hosts)
+backuplines=$(cat /etc/hosts.bak | wc -l)
+currentlines=$(cat /etc/hosts | wc -l)
 revert-lines=$((currentlines-backuplines))
 # Replace edited hosts file with the backup
 mv /etc/hosts.bak /etc/hosts
