@@ -14,3 +14,4 @@ curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /e
 lines=$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)
 # Notify user the script has successfully added domains, using lines variable
 echo "Successfully added $lines domains to hosts file."
+unset lines
