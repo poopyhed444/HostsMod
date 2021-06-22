@@ -8,7 +8,7 @@ The source is completely public, and both the "release" and version in the repos
 In the Minecraft cheating community, it's not uncommon for clients or client cracks/leaks to be malware. The most famous example of this would be the Autumn client "crack", released by Kant. This application attempts to blacklist known hosts of Kant's malware, in order to prevent someone from accidentally getting themselves ratted.
 
 
-Newb also decided to include common IP logger links.
+Newb also decided to include common IP and token logger links.
 
 I forked this with the intention of providing a script that will work on
  Linux and macOS. If you run Windows, go to the original repository at https://github.com/GardeningTool/HostsMod
@@ -19,6 +19,8 @@ One of the domains, "mvncentral.net" is disguised as Maven Central, which is not
 
 Many of the domains may appear to be suspended. This is due to the fact that Kant, the purchaser of the domains and person who spread the malware this program attempts to block, purchased these domains fraudulently. Though they are suspended, I have decided to include them anyways.
 
+## TO-DO
+```Advertisement blocking support: Code is already almost completely ready, just stuck on bash printing out "line 33: syntax error near unexpected token `)'"```
 ## Usage
 
 CURRENT VERSION: 3.0.0
@@ -91,4 +93,12 @@ gyazo.nl
 gaymers.ax
 ps3cfw.com
 iplogger.org
+steancomunnity.ru
+streamcommunnlty.ru
+streancommunuty.ru
+streamconmunitlu.me
+xn--yutube-iqc.com
+yȯutube.com
+streamconmunitlu.me
+stearncomminuty.ru
 ```
