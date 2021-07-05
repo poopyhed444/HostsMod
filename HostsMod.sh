@@ -10,5 +10,27 @@ set -e
 cp /etc/hosts /etc/hosts.bak
 # Append the remote domains file to the /etc/hosts file
 curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
+# Find amount of domains in remote file, create variable to tell user later
+lines=$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)
 # Notify user the script has successfully added domains, using lines variable
-echo "Successfully added "$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)" domains to hosts file."
+echo "Successfully added $lines domains to hosts file."
+# Remove unnecessary variable
+unset lines
+# Create prompt for if user would like adblocking support
+echo "Would you like to also add advertising and malware blocking? This MAY break some websites. (Yes/No)"
+# Check which option the user inputted
+        read option
+        case $option in
+# If the user chose Yes, add domains to hosts file. 
+        "Yes"|"yes")
+          curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts >> /etc/hosts
+          lines=$(curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts | wc -l)
+# Notify user the script has successfully added domains, using new lines variable.
+          echo "Successfully added $lines advertising domains to the hosts file. This number may appear to be quite high, but this is the expected outcome. Domains used are StevenBlack's hosts."
+# Remove lines variable
+          unset lines
+          break
+        "No"|"no")
+          break
+        *) echo "That is not a valid option.";;
+    esac
