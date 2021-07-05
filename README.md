@@ -23,7 +23,7 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 ```Advertisement blocking support: Code is already almost completely ready, just stuck on bash printing out "line 33: syntax error near unexpected token `)'"```
 ## Usage
 
-CURRENT VERSION: 3.0.0
+CURRENT VERSION: 3.0.1
 
 ### Install
 
