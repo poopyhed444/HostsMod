@@ -13,12 +13,12 @@ curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /e
 # Notify user the script has successfully added domains
 echo "Successfully added "$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)" domains to hosts file."
 # Create prompt for if user would like adblocking support
-echo "Would you like to also add advertising and malware blocking? This MAY break some websites. (Yes/No)"
+PS3='Would you like to also add advertising and malware blocking? This MAY break some websites. (Yes/No)'
 # Check which option the user inputted
-        read option
+        option=(Yes, No)
         case $option in
 # If the user chose Yes, add domains to hosts file. 
-        "Yes"|"yes")
+        "Yes")
           curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts >> /etc/hosts
           lines=$(curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts | wc -l)
 # Notify user the script has successfully added domains, using new lines variable.
@@ -26,7 +26,9 @@ echo "Would you like to also add advertising and malware blocking? This MAY brea
 # Remove lines variable
           unset lines
           break
-        "No"|"no")
-          break
+          ;;
+        "No")
+          exit
+          ;;
         *) echo "That is not a valid option.";;
     esac
