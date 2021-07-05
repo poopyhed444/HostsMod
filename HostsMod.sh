@@ -23,7 +23,7 @@ PS3='Would you like to also add advertising and malware blocking? This MAY break
           curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts >> /etc/hosts
           lines=$(curl -sL https://raw.githubusercontent.com/StevenBlack/hosts/master/data/StevenBlack/hosts | wc -l)
 # Notify user the script has successfully added domains, using new lines variable.
-          echo "Successfully added $lines advertising domains to the hosts file. This number may appear to be quite high, but this is the expected outcome. Domains used are StevenBlack's hosts."
+          echo 'Successfully added $lines advertising domains to the hosts file. This number may appear to be quite high, but this is the expected outcome. Domains used are StevenBlack's hosts.'
 # Remove lines variable
           unset lines
           break
