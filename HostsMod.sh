@@ -10,12 +10,8 @@ set -e
 cp /etc/hosts /etc/hosts.bak
 # Append the remote domains file to the /etc/hosts file
 curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
-# Find amount of domains in remote file, create variable to tell user later
-lines=$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)
-# Notify user the script has successfully added domains, using lines variable
-echo "Successfully added $lines domains to hosts file."
-# Remove unnecessary variable
-unset lines
+# Notify user the script has successfully added domains
+echo "Successfully added "$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)" domains to hosts file."
 # Create prompt for if user would like adblocking support
 echo "Would you like to also add advertising and malware blocking? This MAY break some websites. (Yes/No)"
 # Check which option the user inputted
