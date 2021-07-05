@@ -1,7 +1,7 @@
 # HostsMod
 
-## DISCLAIMER: 
-The source is completely public, and both the "release" and version in the repository are exactly the same. There is no obfuscation or protection of any kind, and you are free to edit this code however you like. The command included in the instructions will download it from this repository. If you are not very intelligent and assume that I can do something malicious in 16 lines (including commented description), then you can download the "domains" file and manually add it to the end of the /etc/hosts file, using a text editor like vim or nano (with sudo permissions).  
+## WARNING
+This repository is NOT intended for end users. These pushes are experimental, very early, and very likely will NOT work as intended and may break the script. 
 
 ## Description
 
@@ -27,16 +27,18 @@ CURRENT VERSION: 3.0.0
 
 ### Install
 
+## WARNING: NOT RECOMMENDED TO INSTALL TESTING BRANCH
+
 Simply run
 ```bash
-curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod.sh | sudo bash
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/Testing/HostsMod.sh | sudo bash
 ```
 
 ### Remove
 
 Just run
 ```bash
-curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/Testing/Revert-HostsMod.sh | sudo bash
 ```
 
 
