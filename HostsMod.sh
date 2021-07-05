@@ -15,7 +15,8 @@ echo "Successfully added "$(curl -sL https://raw.githubusercontent.com/HackingMC
 # Create prompt for if user would like adblocking support
 PS3='Would you like to also add advertising and malware blocking? This MAY break some websites. (Yes/No)'
 # Check which option the user inputted
-        option=(Yes, No)
+        options=(Yes, No)
+        select option in "$options[@]}; do
         case $option in
 # If the user chose Yes, add domains to hosts file. 
         "Yes")
