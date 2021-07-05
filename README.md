@@ -1,7 +1,7 @@
 # HostsMod
 
-## DISCLAIMER: 
-The source is completely public, and both the "release" and version in the repository are exactly the same. There is no obfuscation or protection of any kind, and you are free to edit this code however you like. The command included in the instructions will download it from this repository. If you are not very intelligent and assume that I can do something malicious in 16 lines (including commented description), then you can download the "domains" file and manually add it to the end of the /etc/hosts file, using a text editor like vim or nano (with sudo permissions).  
+## WARNING
+This is the BETA release. Code is almost 100% certain to work correctly. There is a very low chance something may break, it is still recommended to use the stable release instead.
 
 ## Description
 
@@ -23,20 +23,20 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 ```Advertisement blocking support: Code is already almost completely ready, just stuck on bash printing out "line 33: syntax error near unexpected token `)'"```
 ## Usage
 
-CURRENT VERSION: 3.0.0
+CURRENT VERSION: 3.0.1
 
 ### Install
 
 Simply run
 ```bash
-curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/HostsMod.sh | sudo bash
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/BETA/HostsMod.sh | sudo bash
 ```
 
 ### Remove
 
 Just run
 ```bash
-curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/main/Revert-HostsMod.sh | sudo bash
+curl -sfL https://raw.githubusercontent.com/HackingMC/HostsMod/BETA/Revert-HostsMod.sh | sudo bash
 ```
 
 
