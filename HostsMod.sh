@@ -18,3 +18,4 @@ cp /etc/hosts /etc/hosts.bak
 curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains >> /etc/hosts
 # Notify user the script has successfully added domains, using lines variable
 echo "Successfully added "$(curl -sL https://raw.githubusercontent.com/HackingMC/HostsMod/main/domains | cat | wc -l)" domains to hosts file."
+fi
