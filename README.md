@@ -12,6 +12,7 @@ Newb also decided to include common IP and token logger links.
 
 I forked this with the intention of providing a script that will work on
  Linux and macOS. If you run Windows, go to the original repository at https://github.com/GardeningTool/HostsMod
+ If you see behind commits, those are most likely new domains added to the original project. The newest version of my HostsMod pulls domains from that repo anyways, so it's unlikely to matter
 
  If you would like to update to the latest domains (which likely will be very rare), run the reversion script first, and then run the original HostsMod.sh script again. It's unlikely that you will have to download a new version of the script, as the current one will always pull domains off of github. 
 
@@ -23,7 +24,8 @@ Many of the domains may appear to be suspended. This is due to the fact that Kan
 ```Advertisement blocking support: Code is already almost completely ready, just stuck on bash printing out "line 33: syntax error near unexpected token `)'"```
 ## Usage
 
-CURRENT VERSION: 3.0.1
+CURRENT VERSION: 4.0.0
+
 
 ### Install
 
